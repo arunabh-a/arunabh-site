@@ -9,6 +9,7 @@ import Footer from './containers/Footer'
 const App = () => {
     return (
         <div>
+            <Menu />
             <Hero />
             <About />
             <Projects />
