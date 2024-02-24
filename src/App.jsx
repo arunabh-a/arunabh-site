@@ -1,4 +1,6 @@
 import React from 'react'
+import './App.css'
+import './index.css'
 import { Menu } from './components/menu/Menu'
 import Contact from './containers/Contact'
 import Hero from './containers/Hero'
