@@ -5,11 +5,7 @@
         "./src/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
-        extend: {
-            fontFamily: {
-                sans: ['EC-Regular', ]
-            }
-        },
+        extend:{},
             colors: {
                 bgDiv: '#1f2042',
                 blue: '#6175F8',

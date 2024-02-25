@@ -1,3 +1,3 @@
 # arunabh - Personal Portfolio Website
 
-This Portfolio is made using react, tailwind, typescript
+This Portfolio is made using react, tailwindcss .

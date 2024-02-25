@@ -3,44 +3,56 @@
 @tailwind utilities;
 
 
-.container{
-    border-style: dashed;
-    border-color: red;
-}
-body {
-    font-family: EC-Light;
-}
-
-.intro-title {
-    font-family: EC-Bold;
-}
-
 
 @layer base {
     @font-face {
         font-family: EC-Bold;   
         font-weight: bold;
         font-display: fallback;
-        src: local("Euclid-Circular-A") ,url("./fonts/euclid-circular-a/Euclid\ Circular\ A\ Bold.ttf") format("truetype");
+        src: local("Euclid-Circular-A") ,url("../fonts/Euclid\ Circular\ A\ Bold.ttf") format("truetype");
     }
     @font-face {
         font-family: EC-Regular;   
-        src: url("./fonts/euclid-circular-a/Euclid\ Circular\ A\ Regular.ttf") format("truetype");
+        src: url("../fonts/Euclid\ Circular\ A\ Regular.ttf") format("truetype");
     }
     @font-face {
         font-family: EC-Italic;   
-        src: url("./fonts/euclid-circular-a/Euclid\ Circular\ A\ Italic.ttf") format("truetype");
+        src: url("../fonts/Euclid\ Circular\ A\ Italic.ttf") format("truetype");
     }
     @font-face {
         font-family: EC-Light;   
-        src: url("./fonts/euclid-circular-a/Euclid\ Circular\ A\ Light.ttf") format("truetype");
+        src: url("../fonts/Euclid\ Circular\ A\ Light.ttf") format("truetype");
     }
     @font-face {
         font-family: EC-Medium;   
-        src: url("./fonts/euclid-circular-a/Euclid\ Circular\ A\ Medium.ttf") format("truetype");
+        src: url("../fonts/Euclid\ Circular\ A\ Medium.ttf") format("truetype");
     }
     @font-face {
         font-family: EC-SemiBold;   
-        src: url("./fonts/euclid-circular-a/Euclid\ Circular\ A\ SemiBold.ttf") format("truetype");
+        src: url("../fonts/Euclid\ Circular\ A\ SemiBold.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: Inter-Black;   
+        src: url("../fonts/Inter-Black.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: Inter-Bold;   
+        src: url("../fonts/Inter-Bold.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: Inter-ExtraBold;   
+        src: url("../fonts/Inter-ExtraBold.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: Inter-Medium;   
+        src: url("../fonts/Inter-Medium.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: Inter-Regular;   
+        src: url("../fonts/Inter-Regular.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: Inter-SemiBold;   
+        src: url("../fonts/Inter-SemiBold.ttf") format("truetype");
     }
 }

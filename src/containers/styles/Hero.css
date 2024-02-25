@@ -1,0 +1,23 @@
+
+.intro-title {
+    font-family: EC-Bold;
+}
+
+.buttContact {
+    font-family: Inter-Bold;
+    color: #000000;
+}
+
+.bgSquircle{
+    position: absolute;
+    border-radius: 35%;
+    top: -450px;
+    left: -200px;
+    background-color: #3B3D65;
+    transform: rotate(12.50deg);
+    opacity: 50%;
+    /* z-index: 9; */
+    width: 1000px;
+    height: 1000px;
+}
+
