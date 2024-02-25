@@ -5,14 +5,13 @@ import { TypeAnimation } from 'react-type-animation'
 
 const Hero = () => {
     return (
-        <div id="home">
+        <div className="hero relative">
             <motion.div 
             className="bgSquircle"
-            initial={{ x: -700, y: -700, rotate: 13, opacity: 0.4 }}
-            animate={{ x: 0, y: 0 }}
-            transition={{ duration: 2.5 }}
-            
-            />
+            initial={{ x: -900, y: -900, rotate: 13, opacity: 0.4 }}
+            animate={{ x: -220, y: -450 }}
+            transition={{ duration: 2.5 }}/>
+
             <div className="absolute top-20 left-20">
             
                 <div className="relative top-20">
@@ -37,6 +36,7 @@ const Hero = () => {
                     className="text-2xl text-white opacity-75 mb-8">Software Dev | CS Major | currently sleeping...</motion.h2>
 
                     <motion.button 
+                    onClick={() => window.location.href = 'https://arunabh.online/'}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ ease: "easeOut", duration: 2 }}
@@ -46,5 +46,4 @@ const Hero = () => {
         </div>
     )
 }
-// style={{ backgroundImage: `url('/path/to/background-image.jpg')` }}
 export default Hero

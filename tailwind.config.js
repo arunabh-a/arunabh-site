@@ -13,6 +13,12 @@
                 black: '#000000',
                 white: '#ffffff',
                 altBg: '#030320',
+                text: '#afb1d9',
+                background: '#020212',
+                primary: '#3a3c64',
+                secondary: '#2a2c51',
+                accent: '#6377f8',               
+                
             },
     },
     plugins: [

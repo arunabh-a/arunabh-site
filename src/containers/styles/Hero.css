@@ -1,3 +1,12 @@
+*{
+    box-sizing: border-box;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
 
 .intro-title {
     font-family: EC-Bold;
@@ -10,14 +19,13 @@
 
 .bgSquircle{
     position: absolute;
-    border-radius: 35%;
-    top: -450px;
-    left: -200px;
+    border-radius: 350px;
+    top: -90%;
+    left: -100%;
     background-color: #3B3D65;
     transform: rotate(12.50deg);
     opacity: 50%;
-    /* z-index: 9; */
-    width: 1000px;
-    height: 1000px;
+    width: 200%;
+    height: 200%;
 }
 

@@ -19,7 +19,7 @@ button {
 
 .hamburger,
 .menu {
-    position: absolute;
+    position: fixed;
 }
 
 .hamburger {

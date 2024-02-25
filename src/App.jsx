@@ -10,10 +10,10 @@ import Footer from './containers/Footer'
 
 const App = () => {
     return (
-        <div>
+        <div className='flex flex-col'>
             <Menu />
             <Hero />
-            {/* <About /> */}
+            <About />
             {/* <Projects /> */}
             {/* <Contact /> */}
             {/* <Footer /> */}

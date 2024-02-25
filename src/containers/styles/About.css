@@ -1,0 +1,20 @@
+#about {
+    position: relative;
+}
+
+.title{
+  
+    font-family: EC-Bold;
+}
+
+* {
+    border-color: red;
+    border-style: dashed;
+}
+
+.about-para {
+    font-family: Inter-Bold;
+    width: 580px;
+    margin: 0;
+    padding: 0;
+}
