@@ -2,9 +2,11 @@ import React from 'react'
 import './styles/Hero.css'
 import { motion } from 'framer-motion'
 import { TypeAnimation } from 'react-type-animation'
+import { Element } from 'react-scroll'
 
 const Hero = () => {
     return (
+        <Element name = "home">
         <div className="hero relative">
             <motion.div 
             className="bgSquircle"
@@ -44,6 +46,7 @@ const Hero = () => {
                 </div>
             </div>
         </div>
+        </Element>
     )
 }
 export default Hero

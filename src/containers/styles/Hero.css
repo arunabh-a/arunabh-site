@@ -20,12 +20,11 @@
 .bgSquircle{
     position: absolute;
     border-radius: 350px;
-    top: -90%;
-    left: -100%;
+    top: -1rem;
+    left: -1rem;
     background-color: #3B3D65;
     transform: rotate(12.50deg);
     opacity: 50%;
-    width: 200%;
-    height: 200%;
+    width: 65rem;
+    height: 65rem;
 }
-

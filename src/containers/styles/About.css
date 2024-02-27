@@ -13,8 +13,41 @@
 }
 
 .about-para {
+    position: relative;
     font-family: Inter-Bold;
-    width: 580px;
+    font-size: 1.3rem;
+    width: 700px;
     margin: 0;
+    left: 120px;
     padding: 0;
+}
+
+.about-img {
+    position: absolute;
+    top: 70px;
+    right: 70px;
+    border-radius: 10%;
+    aspect-ratio: 1/1;
+    padding: 50px;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+    filter: grayscale(100%);
+    
+}
+
+.about-img img:hover {
+    filter: grayscale(0%);
+    transition: 0.2s;
+    box-shadow:  20px 20px 60px #3a3c64,
+             -20px -20px 60px #2a2c51;
+    scale: 1.1;
 }
