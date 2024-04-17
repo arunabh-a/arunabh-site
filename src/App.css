@@ -16,14 +16,13 @@ body {
 
   /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-    width: auto;
+    width: 8px;
     padding: 1px;
     margin-right: 1px;
 }
 
 *::-webkit-scrollbar-track {
     background: #2a2c51;
-    border-radius: 10px;
 }
 
 *::-webkit-scrollbar-thumb {

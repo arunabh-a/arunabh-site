@@ -1,10 +1,28 @@
 import React from 'react'
 import './styles/Hero.css'
 import { motion } from 'framer-motion'
-import { TypeAnimation } from 'react-type-animation'
 import { Element } from 'react-scroll'
+import TypewriterEffect from '../components/ui/typewriter'
 
 const Hero = () => {
+
+    const words = [
+        {
+            text: "Hello",
+        },
+        {
+            text: "There,",
+        },
+        {
+            text: "I'm",
+        },
+        {
+            text: "arunabh",
+            className: "font-extrabold intro-title",
+        },
+    ];
+
+
     return (
         <Element name = "home">
         <div className="hero relative">
@@ -17,19 +35,8 @@ const Hero = () => {
             <div className="absolute top-20 left-20">
             
                 <div className="relative top-20">
+                    <TypewriterEffect words={words} />
                     
-                    <h1 className="text-5xl font-bold intro-title mb-1 ">
-                        <TypeAnimation
-                            sequence={['Hello There, I\'m']}
-                            speed={40}
-                            cursor={false}
-                            repeat={1} />
-                        <TypeAnimation 
-                            sequence={[1050,' arunabh']}
-                            speed={40}
-                            cursorColor='white'
-                            className='font-extrabold text-blue'/>
-                    </h1>
 
                     <motion.h2 
                     initial={{ y: 50, opacity: 0 }}
