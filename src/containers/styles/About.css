@@ -4,7 +4,7 @@
 
 .title{
   
-    font-family: EC-Bold;
+    font-family: Arista-Alternate;
 }
 
 * {
@@ -14,9 +14,9 @@
 
 .about-para {
     position: relative;
-    font-family: Inter-Bold;
-    font-size: 1.3rem;
-    width: 700px;
+    font-family: EC-Semibold;
+    font-size: 1.5rem;
+    width: 800px;
     margin: 0;
     left: 120px;
     padding: 0;
@@ -41,12 +41,11 @@
     object-fit: cover;
     border-radius: 10%;
     filter: grayscale(100%);
-    
+    transition: all 0.2s;
 }
 
 .about-img img:hover {
     filter: grayscale(0%);
-    transition: 0.2s;
     box-shadow:  20px 20px 60px #3a3c64,
              -20px -20px 60px #2a2c51;
     scale: 1.1;

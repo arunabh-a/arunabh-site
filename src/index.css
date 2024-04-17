@@ -55,4 +55,28 @@
         font-family: Inter-SemiBold;   
         src: url("../fonts/Inter-SemiBold.ttf") format("truetype");
     }
+    @font-face {
+        font-family: Arista-Regular;   
+        src: url("../fonts/Arista\ 2.0.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: Arista-Light;   
+        src: url("../fonts/Arista\ 2.0\ Light.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: Arista-Fat;   
+        src: url("../fonts/Arista\ 2.0\ Fat.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: Arista-Alternate;   
+        src: url("../fonts/Arista\ 2.0\ Alternate.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: Arista-Alternate-Light;   
+        src: url("../fonts/Arista\ 2.0\ Alternate\ Light.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: Arista-Alternate-Full;   
+        src: url("../fonts/Arista\ 2.0\ Alternate\ Full.ttf") format("truetype");
+    }
 }
