@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import './styles/Projects.css';
 import Carousel from '../components/carousel/carousel';
 import { HoverEffect } from '../components/ui/card-hover';
@@ -49,7 +49,7 @@ const Projects = () => {
         <div className='mb-20'>
             <h1 className='text-6xl title relative left-20 mb-20'>My Work</h1>
             <Carousel />
-            <div className="max-w-5xl mx-auto px-8 mt-20">
+            <div className="max-w-6xl mx-auto px-20  mt-20">
                 <HoverEffect items={project_tiles} />
             </div>
 

@@ -1,0 +1,50 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .card-container {
+    position: relative;
+    display: block;
+    padding: 12px;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+  }
+  
+  .card {
+    border-radius: 16px;
+    height: 100%;
+    width: 100%;
+    padding: 16px;
+    background-color: #3B3D65;
+    border: 1px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+  
+  .card:hover {
+    border-color: #444;
+  }
+  
+  .card-content {
+    position: relative;
+    z-index: 2;
+    padding: 16px;
+  }
+  
+  .card-title {
+    color: #fff;
+    font-weight: bold;
+    margin-top: 16px;
+    font-size: 18px;
+  }
+  
+  .card-description {
+    margin-top: 32px;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
