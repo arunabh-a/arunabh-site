@@ -31,12 +31,9 @@ body {
     border-radius: 10px;
 }
 
-.app-container {
-    display: flex; 
-    box-sizing: border-box; /* This ensures padding is included in height calculation */
-}
 
-/* .mobile-warning {
+
+.mobile-warning {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,4 +48,4 @@ body {
     border-radius: 40px;
     color: #f9f9f9;
     
-} */
+}
