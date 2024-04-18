@@ -33,7 +33,8 @@
     align-items: center; /* Center the content of the slide */
 }
 
-.embla__slide_child {
+.embla__slide img {
+    border-radius: 50px;
     display: block;
     height: 100%;
     object-fit: cover;

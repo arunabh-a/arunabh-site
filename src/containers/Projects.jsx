@@ -2,6 +2,8 @@ import React from 'react';
 import './styles/Projects.css';
 import Carousel from '../components/carousel/carousel';
 import { HoverEffect } from '../components/ui/card-hover';
+import { Element } from 'react-scroll';
+import FadeInWhenVisible from '../components/Fade-in-visible';
 
 
 const Projects = () => {
@@ -22,7 +24,7 @@ const Projects = () => {
             {
             title: "FitnestX-UI",
             description:
-                "A Meal Planner UI made using Flutter.",
+                "A Fitness-based Meal Planner and Diet Mobile app UI. Made using Flutter.",
             link: "https://github.com/arunabh-a/FitnestX-UI",
             },
             {
@@ -46,15 +48,21 @@ const Projects = () => {
         ];
 
     return (
+        <Element name = "projects">
         <div className='mb-20'>
-            <h1 className='text-6xl title relative left-20 mb-20'>My Work</h1>
-            <Carousel />
+            <FadeInWhenVisible>
+                <h1 className='text-6xl title relative left-20 mb-20'>Stuff I Made</h1>
+            </FadeInWhenVisible>
+            {/* <Carousel /> */}
             <div className="max-w-6xl mx-auto px-20  mt-20">
-                <HoverEffect items={project_tiles} />
+                <FadeInWhenVisible>
+                    <HoverEffect items={project_tiles} />
+                </FadeInWhenVisible>
             </div>
 
             
         </div>
+        </Element>
     );
     };
 

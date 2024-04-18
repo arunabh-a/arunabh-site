@@ -15,7 +15,7 @@ const Carousel = () => {
     useEffect(() => {
         intervalRef.current = setInterval(() => {
             scrollNext();
-        }, 3000);
+        }, 5000);
 
         return () => {
             if (intervalRef.current) clearInterval(intervalRef.current);
@@ -27,13 +27,13 @@ const Carousel = () => {
             <div className="embla" ref={emblaRef}>
                 <div className="embla__container">
                         <div className="embla__slide">
-                            <img src="https://via.placeholder.com/1800x600" alt="Placeholder image" />
+                            <img src="https://via.placeholder.com/1200x600" alt="Placeholder image" />
                         </div>
                         <div className="embla__slide">
-                            <img src="https://via.placeholder.com/1800x600" alt="Placeholder image" />
+                            <img src="https://via.placeholder.com/1200x600" alt="Placeholder image" />
                         </div>
                         <div className="embla__slide">
-                            <img src="https://via.placeholder.com/1800x600" alt="Placeholder image" />
+                            <img src="https://via.placeholder.com/1200x600" alt="Placeholder image" />
                         </div>
                 </div>
             </div>

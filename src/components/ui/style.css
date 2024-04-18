@@ -19,13 +19,16 @@
     height: 100%;
     width: 100%;
     padding: 16px;
-    background-color: #3B3D65;
+    background-color: #25263f;
     border: 1px solid transparent;
-    transition: border-color 0.3s ease;
+    transition: all 0.3s ease;
   }
   
   .card:hover {
-    border-color: #444;
+    border-color: #ffffff;
+    transform: scale(1.05) rotate3d(1, 1, 1, 5deg);
+    background-color: #3B3D65;
+
   }
   
   .card-content {
@@ -34,17 +37,25 @@
     padding: 16px;
   }
   
+  .github {
+    position: absolute;
+    top: 0; /* Adjust the value as needed */
+    right: 0; /* Adjust the value as needed */
+    width: 32px;
+  }
+
+
   .card-title {
     color: #fff;
     font-weight: bold;
     margin-top: 16px;
-    font-size: 18px;
+    font-size: 20px;
   }
   
   .card-description {
     margin-top: 32px;
-    color: #666;
-    font-size: 14px;
+    color: #b8b8b8;
+    font-size: 15px;
     line-height: 1.5;
   }
   

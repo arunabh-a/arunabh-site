@@ -17,7 +17,9 @@
                 background: '#020212',
                 primary: '#3a3c64',
                 secondary: '#2a2c51',
-                accent: '#6377f8',               
+                accent: '#6377f8',
+                form: '#0d0a1e', 
+                placeholder: '#8d8fbb',         
                 
             },
     },

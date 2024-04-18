@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./style.css";
+import github from '../../../public/github-fill.svg';
 
 export const HoverEffect = ({ items, className }) => {
   let [hoveredIndex, setHoveredIndex] = useState(null);
@@ -25,6 +26,7 @@ export const Card = ({ className, children }) => {
   return (
     <div className={`card ${className}`}>
       <div className="card-content">
+        <img src={github} alt="github" className="github" />
         {children}
       </div>
     </div>

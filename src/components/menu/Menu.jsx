@@ -1,13 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import "./styles.css";
-import About from '../../containers/About'
-import Projects from '../../containers/Projects'
-import Contact from '../../containers/Contact'
-import Hero from "../../containers/Hero";
 
-const links = ["home", "about", "projects", "contact"];
-
+const links = ["home", "about", "projects"];
+// , "contact"
 export const Menu = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isBurgerOpen, setIsBurgerOpen] = useState(false);
