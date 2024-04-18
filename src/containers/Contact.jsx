@@ -76,7 +76,7 @@ const Contact = () => {
     };
 
     return (
-        <div className='xl:mb-20 contain-div overflow-hidden flex justify-center gap-20 items-start '>
+        <div className='xl:mb-20 contain-div overflow-hidden flex justify-center gap-10 items-start '>
             <motion.div
                 ref={formRef}
                 initial='hidden'

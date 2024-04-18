@@ -31,38 +31,24 @@ body {
     border-radius: 10px;
 }
 
+.app-container {
+    display: flex; 
+    box-sizing: border-box; /* This ensures padding is included in height calculation */
+}
 
-/* App.css or index.css */
-.app-container > *:not(.mobile-warning) {
-    display: none; /* Hide all children except MobileWarning by default */
-  }
-  
-  .mobile-warning {
-    display: none; /* Hide MobileWarning by default */
-  }
-  
-  /* Medium devices (tablets, 768px and up) */
-  @media (min-width: 768px) {
-    .app-container > *:not(.mobile-warning) {
-      display: block; /* Show main content on larger screens */
-    }
-  
-    .mobile-warning {
-      display: none; /* Keep MobileWarning hidden on larger screens */
-    }
-  }
-  
-  /* Small devices (mobile, less than 768px) */
-  @media (max-width: 767px) {
-    .app-container > *:not(.mobile-warning) {
-      display: none; /* Hide main content on smaller screens */
-    }
-  
-    .mobile-warning {
-      display: block; /* Show MobileWarning on smaller screens */
-      text-align: center;
-      padding: 20px;
-      font-size: 16px;
-    }
-  }
-  
+/* .mobile-warning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    font-size: 46px;
+    font-family: Arista-Regular;
+    box-sizing: border-box;
+    background: #080911;
+    padding: 100px;
+    border-radius: 40px;
+    color: #f9f9f9;
+    
+} */
