@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './App.css'
 import './index.css'
-import { Menu } from './components/menu/Menu'
 import Hero from './containers/Hero'
 import About from './containers/About'
 import Contact from './containers/Contact'
@@ -36,7 +35,6 @@ const App = () => {
                 <MobileWarning />
             ) : (
             <>
-                <Menu />
                     <Hero />
                     <About />
                     <Projects />

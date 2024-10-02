@@ -32,28 +32,24 @@
         src: url("../fonts/Euclid\ Circular\ A\ SemiBold.ttf") format("truetype");
     }
     @font-face {
-        font-family: Inter-Black;   
-        src: url("../fonts/Inter-Black.ttf") format("truetype");
+        font-family: Fredoka-Bold;   
+        src: url("../fonts/Fredoka-Bold.ttf") format("truetype");
     }
     @font-face {
-        font-family: Inter-Bold;   
-        src: url("../fonts/Inter-Bold.ttf") format("truetype");
+        font-family: Fredoka-Light;   
+        src: url("../fonts/Fredoka-Light.ttf") format("truetype");
     }
     @font-face {
-        font-family: Inter-ExtraBold;   
-        src: url("../fonts/Inter-ExtraBold.ttf") format("truetype");
+        font-family: Fredoka-Medium;   
+        src: url("../fonts/Fredoka-Medium.ttf") format("truetype");
     }
     @font-face {
-        font-family: Inter-Medium;   
-        src: url("../fonts/Inter-Medium.ttf") format("truetype");
+        font-family: Fredoka-Regular;   
+        src: url("../fonts/Fredoka-Regular.ttf") format("truetype");
     }
     @font-face {
-        font-family: Inter-Regular;   
-        src: url("../fonts/Inter-Regular.ttf") format("truetype");
-    }
-    @font-face {
-        font-family: Inter-SemiBold;   
-        src: url("../fonts/Inter-SemiBold.ttf") format("truetype");
+        font-family: Fredoka-SemiBold;   
+        src: url("../fonts/Fredoka-SemiBold.ttf") format("truetype");
     }
     @font-face {
         font-family: Arista-Regular;   

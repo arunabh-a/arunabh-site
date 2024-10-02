@@ -1,6 +1,5 @@
 import React from 'react';
 import './styles/Projects.css';
-import Carousel from '../components/carousel/carousel';
 import { HoverEffect } from '../components/ui/card-hover';
 import { Element } from 'react-scroll';
 import FadeInWhenVisible from '../components/Fade-in-visible';
@@ -12,7 +11,7 @@ const Projects = () => {
             {
             title: "Reptiq",
             description:
-                "A Money Ledger App that helps you keep track of your expenses and income. Made with FLutter.",
+                "A Money Ledger App that helps you keep track of your expenses and income.",
             link: "https://github.com/arunabh-a/Reptiq",
             },
             {
@@ -22,10 +21,10 @@ const Projects = () => {
             link: "https://github.com/arunabh-a/Shirclex",
             },
             {
-            title: "FitnestX-UI",
+            title: "TabenSpace",
             description:
-                "A Fitness-based Meal Planner and Diet Mobile app UI. Made using Flutter.",
-            link: "https://github.com/arunabh-a/FitnestX-UI",
+                "A Web Application for creating and managing your own Custom Tabs.",
+            link: "https://github.com/arunabh-a/Tabenspace",
             },
             {
             title: "ParTable",
@@ -40,20 +39,19 @@ const Projects = () => {
             link: "https://github.com/arunabh-a/My-Socials",
             },
             {
-            title: "100-Days-of-Python",
+            title: "SDM",
             description:
-                "A 100 Days of Code Challenge for Python. Contains all the code and projects I made during the challenge.",
-            link: "https://github.com/arunabh-a/100-Days-of-Python",
+                "A Suspect Detection Model used to analyse and flag potential suspects.",
+            link: "https://github.com/hack-black-pearl/Suspect_Detection_Model",
             },
         ];
 
     return (
-        <Element name = "projects">
-        <div className='mb-20'>
+        <div className='Projects'>
             <FadeInWhenVisible>
                 <h1 className='text-6xl title relative left-20 mb-20'>Stuff I Made</h1>
             </FadeInWhenVisible>
-            {/* <Carousel /> */}
+
             <div className="max-w-6xl mx-auto px-20  mt-20">
                 <FadeInWhenVisible>
                     <HoverEffect items={project_tiles} />
@@ -62,7 +60,6 @@ const Projects = () => {
 
             
         </div>
-        </Element>
     );
     };
 

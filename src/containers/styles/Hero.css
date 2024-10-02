@@ -5,23 +5,23 @@
 .hero {
     position: relative;
     overflow: hidden;
-    height: 100vh;
+    height: 90vh;
 }
 
 .intro-title {
-    font-family: EC-Bold;
+    font-family: Fredoka-Medium;
     color: #6175F8;
 }
 
 .intro-subtitle {
-    font-family: EC-Regular;
+    font-family: Fredoka-Regular;
 
 }
 
 .buttContact {
     /* padding: 1em 1em; */
     width: 13rem;
-    background-color: #7DA6F5;
+    background-color: #4750a5;
     font-size: 1.4rem;
     height: 2.5rem;
     border-radius: 8px;
@@ -29,7 +29,7 @@
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
-    font-family: Inter-Bold;
+    font-family: Fredoka-SemiBold;
 }
 
 .buttContact:hover {
@@ -44,12 +44,11 @@
 
 .bgSquircle{
     position: absolute;
-    border-radius: 350px;
-    top: -1rem;
-    left: -1rem;
+    border-radius: 0 0 30% 0 ;
     background-color: #3B3D65;
-    transform: rotate(12.50deg);
+    rotate: 80;
     opacity: 50%;
     width: 65rem;
     height: 65rem;
+    box-shadow: 10px 10px 20px rgba(2, 16, 99, 0.5);
 }

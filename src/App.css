@@ -1,34 +1,36 @@
 
 body {
-    font-family: EC-Regular;
+    font-family: Fredoka-Regular;
     color: #f9f9f9;
-    background: #080911;
-    border-style: solid;
-    border-color: red;
+    background: #070918;
+    overflow-x: hidden;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column; /* Stacks components vertically */
+    gap: 15vh; /* Adjust the gap size as needed */
 }
 
 
-/* * {
-    scrollbar-width: auto;
-    scrollbar-color: #b0b3da #2a2c51;
-
-} */
 
   /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-    width: 8px;
+    width: 1px;
     padding: 1px;
     margin-right: 1px;
 }
 
 *::-webkit-scrollbar-track {
-    background: #2a2c51;
+    background: #2a2c5100;
+    opacity: 0;
 }
 
 *::-webkit-scrollbar-thumb {
     padding: 1px;
-    background-color: #b0b3da;
+    background-color: #b0b3da00;
     border-radius: 10px;
+    opacity: 0.1;
 }
 
 
@@ -41,7 +43,7 @@ body {
     text-align: center;
     padding: 20px;
     font-size: 46px;
-    font-family: Arista-Regular;
+    font-family: Fredoka-Regular;
     box-sizing: border-box;
     background: #080911;
     padding: 100px;

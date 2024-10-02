@@ -1,31 +1,36 @@
-#about {
-    position: relative;
+.about{
+    height: 70vh;
 }
 
 .title{
   
-    font-family: Arista-Alternate;
+    font-family: Fredoka-SemiBold;
 }
 
-* {
-    border-color: red;
-    border-style: dashed;
+.about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    display: flex;
+    align-items: center; /* Vertically centers items */
+    justify-content: space-between; /* Spaces items evenly */
+    margin: 30px; 
 }
 
 .about-para {
-    position: relative;
-    font-family: EC-Regular;
+    font-family: Fredoka-Regular;
     font-size: 1.5rem;
-    width: 800px;
+    margin-right: 20px;
+    max-width: 800px;
     margin: 0;
+    flex: 1;
     left: 120px;
     padding: 0;
 }
 
 .about-img {
-    position: absolute;
-    top: 70px;
-    right: 70px;
     border-radius: 10%;
     aspect-ratio: 1/1;
     padding: 50px;
@@ -40,7 +45,7 @@
     height: 100%;
     object-fit: cover;
     border-radius: 10%;
-    filter: grayscale(100%);
+    filter: grayscale(20%);
     transition: all 0.2s;
 }
 
