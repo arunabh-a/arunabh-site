@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    height: 90vh;
+}
+
+.intro-title {
+    font-family: Fredoka-Medium;
+    color: #6175F8;
+}
+
+.intro-subtitle {
+    font-family: Fredoka-Regular;
+
+}
+
+.buttContact {
+    /* padding: 1em 1em; */
+    width: 13rem;
+    background-color: #4750a5;
+    font-size: 1.4rem;
+    height: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    font-family: Fredoka-SemiBold;
+}
+
+.buttContact:hover {
+    background-color: #6175F8;
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.buttContact:active {
+    transform: translateY(-3px);
+}
+
+.bgSquircle{
+    position: absolute;
+    border-radius: 0 0 30% 0 ;
+    background-color: #3B3D65;
+    rotate: 80;
+    opacity: 50%;
+    width: 65rem;
+    height: 65rem;
+    box-shadow: 10px 10px 20px rgba(2, 16, 99, 0.5);
+}
