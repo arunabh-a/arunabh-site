@@ -1,6 +1,6 @@
 import React from 'react'
 import './styles/About.css'
-import about from '/PFPPP.jpg'
+// import about from '../../../PFPPP.jpg'
 import FadeInWhenVisible from '../Fade-in-visible'
 import Image from 'next/image'
 
@@ -34,7 +34,7 @@ const About = () => {
                 <div className='about-img'>
                     <FadeInWhenVisible>
                         {/* <img src={about} alt="about" /> */}
-                        <Image src={about} alt="about" width={500} height={500} />
+                        <Image src='../../../public/public/PFPPP.jpg' alt="about" width={500} height={500} />
                     </FadeInWhenVisible>
                 </div>
             </div>

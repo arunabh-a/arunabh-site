@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import "./style.css";
-import github from '../../../public/github-fill.svg';
+// import github from '../../../github-fill.svg';
 
 export const HoverEffect = ({ items, className }) => {
   let [hoveredIndex, setHoveredIndex] = useState(null);

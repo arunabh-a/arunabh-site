@@ -1,8 +1,8 @@
-import React from 'react';
-import { motion, useAnimation } from 'framer-motion';
+import React, { ReactNode } from 'react';
+import { motion, useAnimation } from 'motion/react';
 import { useInView } from 'react-intersection-observer';
 
-const FadeInWhenVisible = ({ children }) => {
+const FadeInWhenVisible = ({ children }: { children: ReactNode }) => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
 
