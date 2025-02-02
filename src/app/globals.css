@@ -33,6 +33,36 @@ body {
     color: #6175F8;
 }
 
+.pfp {
+    border-radius: 30%;
+    filter: grayscale(20%);
+    transition: all 0.2s;
+}
+
+.pfp:hover {
+    filter: grayscale(0%);
+    box-shadow:  20px 20px 60px #3a3c64,
+             -20px -20px 60px #2a2c51;
+    scale: 1.1;
+}
+
+*::-webkit-scrollbar {
+    width: 1px;
+    padding: 1px;
+    margin-right: 1px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #2a2c5100;
+    opacity: 0;
+}
+
+*::-webkit-scrollbar-thumb {
+    padding: 1px;
+    background-color: #b0b3da00;
+    border-radius: 10px;
+    opacity: 0.1;
+}
 
 
 @layer utilities {

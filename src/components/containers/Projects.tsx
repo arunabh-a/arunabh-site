@@ -1,6 +1,5 @@
 import React from 'react';
-import './styles/Projects.css';
-// import { HoverEffect } from '../ui/card-hover';
+import { HoverEffect } from '../ui/card-hover';
 // import { Element } from 'react-scroll';
 // import FadeInWhenVisible from '../Fade-in-visible';
 
@@ -47,14 +46,14 @@ const Projects = () => {
         ];
 
     return (
-        <div className='Projects'>
+        <div className='h-screen padding-container max-container'>
             {/* <FadeInWhenVisible> */}
                 <h1 className='text-6xl title relative left-20 mb-20'>Stuff I Made</h1>
             {/* </FadeInWhenVisible> */}
 
             <div className="max-w-6xl mx-auto px-20  mt-20">
                 {/* <FadeInWhenVisible> */}
-                    {/* <HoverEffect items={project_tiles} /> */}
+                    <HoverEffect items={project_tiles} />
                 {/* </FadeInWhenVisible> */}
             </div>
 
