@@ -1,28 +1,28 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { motion, stagger, useAnimate, useInView } from "motion/react";
+import { motion, stagger, useAnimate, useInView } from "framer-motion";
 import { useEffect } from "react";
 
 export const TypewriterEffect = ({
-    words,
-    className,
-    cursorClassName,
+  words,
+  className,
+  cursorClassName,
 }: {
-    words: {
-        text: string;
-        className?: string;
-    }[];
+  words: {
+    text: string;
     className?: string;
-    cursorClassName?: string;
+  }[];
+  className?: string;
+  cursorClassName?: string;
 }) => {
   // split text inside of words into array of characters
-    const wordsArray = words.map((word) => {
+  const wordsArray = words.map((word) => {
     return {
-        ...word,
-        text: word.text.split(""),
+      ...word,
+      text: word.text.split(""),
     };
-    });
+  });
 
   const [scope, animate] = useAnimate();
   const isInView = useInView(scope);
@@ -72,7 +72,7 @@ export const TypewriterEffect = ({
   return (
     <div
       className={cn(
-        "text-base sm:text-xl md:text-3xl lg:text-5xl font-bold text-center",
+        "text-2xl sm:text-xl md:text-3xl lg:text-5xl font-bold",
         className
       )}
     >
@@ -90,7 +90,7 @@ export const TypewriterEffect = ({
           repeatType: "reverse",
         }}
         className={cn(
-          "inline-block rounded-sm w-[.25rem] h-4 md:h-6 lg:h-10 bg-blue-500",
+          "inline-block rounded-sm w-[4px] h-4 md:h-6 lg:h-10 bg-blue-500",
           cursorClassName
         )}
       ></motion.span>
@@ -178,7 +178,7 @@ export const TypewriterEffectSmooth = ({
           repeatType: "reverse",
         }}
         className={cn(
-          "block rounded-sm w-[.25rem]  h-4 sm:h-6 xl:h-12 bg-blue-500",
+          "block rounded-sm w-[4px]  h-4 sm:h-6 xl:h-12 bg-blue-500",
           cursorClassName
         )}
       ></motion.span>

@@ -1,48 +1,53 @@
+"use client";
 import React from 'react'
-import './styles/Hero.css'
-import { motion } from 'motion/react'
+import { motion } from 'framer-motion'
 import { TypewriterEffect } from '@/components/ui/typewriter'
+import { HoverBorderGradient } from '../ui/hover-button';
 
 const Hero = () => {
     const words = [
         { text: "Hello" },
         { text: "There," },
         { text: "I'm" },
-        { text: "arunabh", className: "intro-title" },
+        { text: "arunabh", className:"font-fredoka font-medium text-black" },
     ];
 
     return (
-        <div className="hero relative">
+        <div className="h-screen">
             <motion.div 
-                className="bgSquircle"
-                initial={{ x: -900, y: -900, rotate: 20 }}
-                animate={{ x: -220, y: -520 }}
+                className="bgContainer absolute opacity-50 lg:w-[65rem] lg:h-[65rem] w-[52rem] h-[52rem] bg-[#3B3D65]"
+                initial={{ x: -900, y: -900, rotate: 30 }}
+                animate={{ x: -200, y: -580 }}
                 transition={{ duration: 1.0 }}
             />
-            <div className="absolute top-20 left-20">
-                <div className="relative top-20">
-                    <TypewriterEffect words={words} />
-                    <motion.h2 
-                        initial={{ y: 50, opacity: 0 }}
-                        animate={{ y: 0, opacity: 0.6 }}
-                        transition={{ ease: "easeOut", duration: 1 }}
-                        className="text-2xl text-white intro-subtitle opacity-75 mb-8"
-                    >
-                        Software Developer | DevOps | Computer Science Major
-                    </motion.h2>
-                    <motion.button
+            <div className="flex flex-col lg:p-20 p-10">
+                <TypewriterEffect words={words} />
+                <motion.h2 
+                    initial={{ y: 50, opacity: 0 }}
+                    animate={{ y: 0, opacity: 0.6 }}
+                    transition={{ ease: "easeOut", duration: 1 }}
+                    className="lg:text-2xl text-base  text-white font-fredoka font-medium opacity-75 lg:mb-10 mb-5">
+                    Software Developer | DevOps | Computer Science Major
+                </motion.h2>
+                
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ ease: "easeOut", duration: 3 }}>
+                    <HoverBorderGradient
+                        containerClassName="lg:rounded-2xl rounded-lg"
+                        as="button"
+                        className=" bg-[#4750a5] text-white lg:text-xl text-sm flex items-center cursor-pointer"
                         onClick={() => window.location.href = 'https://arunabh.online/'}
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ ease: "easeOut", duration: 3 }}
-                        className="buttContact"
-                    >
-                        See my Profiles
-                    </motion.button>
-                </div>
+                        >
+                        <span>Contact Me</span>
+                    </HoverBorderGradient>
+                </motion.div>
             </div>
+            
         </div>
     )
 }
 
 export default Hero
+// onClick={() => window.location.href = 'https://arunabh.online/'}
