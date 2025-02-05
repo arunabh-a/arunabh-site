@@ -1,4 +1,9 @@
 import type { Config } from "tailwindcss";
+const defaultTheme = require("tailwindcss/defaultTheme");
+const colors = require("tailwindcss/colors");
+const {
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
 
 export default {
   content: [
@@ -22,6 +27,8 @@ export default {
         third: "moveInCircle 40s linear infinite",
         fourth: "moveHorizontal 40s ease infinite",
         fifth: "moveInCircle 20s ease infinite",
+        "background-position-spin":
+          "background-position-spin 3000ms infinite alternate",
       },
       keyframes: {
         moveHorizontal: {
@@ -57,8 +64,25 @@ export default {
             transform: "translateY(-50%)",
           },
         },
+        "background-position-spin": {
+          "0%": { backgroundPosition: "top center" },
+          "100%": { backgroundPosition: "bottom center" },
+        },
     },
   },
-  plugins: [],
+  plugins: [
+    addVariablesForColors,
+  ],
 },
  } satisfies Config;
+
+ function addVariablesForColors({ addBase, theme }: any) {
+    let allColors = flattenColorPalette(theme("colors"));
+    let newVars = Object.fromEntries(
+      Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+    );
+   
+    addBase({
+      ":root": newVars,
+    });
+  }

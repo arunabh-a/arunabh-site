@@ -3,17 +3,12 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { TypewriterEffect } from '@/components/ui/typewriter'
 import { HoverBorderGradient } from '../ui/hover-button';
+import BlurText from '../ui/hoverHero';
 
 const Hero = () => {
-    const words = [
-        { text: "Hello" },
-        { text: "There," },
-        { text: "I'm" },
-        { text: "arunabh", className:"font-fredoka font-medium text-black" },
-    ];
 
     return (
-        <div className="h-screen">
+        <div className="h-screen ">
             <motion.div 
                 className="bgContainer absolute opacity-50 lg:w-[65rem] lg:h-[65rem] w-[52rem] h-[52rem] bg-[#3B3D65]"
                 initial={{ x: -900, y: -900, rotate: 30 }}
@@ -21,7 +16,14 @@ const Hero = () => {
                 transition={{ duration: 1.0 }}
             />
             <div className="flex flex-col lg:p-20 p-10">
-                <TypewriterEffect words={words} />
+                <BlurText
+                    text="Hello There, I'm "
+                    highlightText="arunabh"
+                    delay={100}
+                    animateBy="words"
+                    direction="top"
+                    className="text-2xl"
+                />
                 <motion.h2 
                     initial={{ y: 50, opacity: 0 }}
                     animate={{ y: 0, opacity: 0.6 }}

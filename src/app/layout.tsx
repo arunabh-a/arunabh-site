@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Footer from "@/components/containers/Footer";
 
 const fredoka = localFont({
     src: [
@@ -69,9 +70,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${euclid.className} ${fredoka.className} min-h-screen antialiased`}
+        className={`${euclid.className} ${fredoka.className} flex flex-col antialiased`}
       >
         {children}
+        <Footer />
       </body>
     </html>
   );

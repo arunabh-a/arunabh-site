@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
+import { NeonGradientCard } from "./neon-gradient";
 
 export const HoverEffect = ({
   items,
@@ -20,7 +21,7 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-10",
+        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-5",
         className
       )}
     >
@@ -32,10 +33,11 @@ export const HoverEffect = ({
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
-          <AnimatePresence>
+          <AnimatePresence
+          >
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-800/[0.8] block  rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-blue-950/[0.8] block  rounded-3xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -52,7 +54,7 @@ export const HoverEffect = ({
           <Card>
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
-            
+
           </Card>
         </Link>
       ))}
@@ -68,16 +70,19 @@ export const Card = ({
   children: React.ReactNode;
 }) => {
   return (
+    <NeonGradientCard
+    >
     <div
       className={cn(
-        "rounded-2xl h-full w-full p-4 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
-        className
-      )}
-    >
+          "rounded-2xl h-60  w-full p-4 overflow-hidden bg-[#1b1c2e] border border-transparent group-hover:border-black relative z-20",
+          className
+        )}
+        >
       <div className="relative z-50">
-        <div className="p-4">{children}</div>
+        <div className="p-4 flex flex-col gap-2">{children}</div>
       </div>
     </div>
+    </NeonGradientCard>
   );
 };
 export const CardTitle = ({
@@ -88,7 +93,7 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("text-zinc-100 font-bold tracking-wide mt-4", className)}>
+    <h4 className={cn("text-white text-2xl font-fredoka font-semibold tracking-wide", className)}>
       {children}
     </h4>
   );
@@ -103,7 +108,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm",
+        " text-zinc-400 tracking-wide leading-relaxed text-lg",
         className
       )}
     >

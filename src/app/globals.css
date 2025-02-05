@@ -11,7 +11,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #070918;
     --foreground: #ededed;
   }
 }
@@ -34,16 +34,21 @@ body {
 }
 
 .pfp {
-    border-radius: 30%;
     filter: grayscale(20%);
     transition: all 0.2s;
 }
 
 .pfp:hover {
     filter: grayscale(0%);
-    box-shadow:  20px 20px 60px #3a3c64,
-             -20px -20px 60px #2a2c51;
     scale: 1.1;
+}
+
+@media screen and (max-width: 768px) {
+    .pfp:hover {
+        filter: grayscale(0%);
+        box-shadow: none;
+    }
+    
 }
 
 *::-webkit-scrollbar {
@@ -84,6 +89,10 @@ body {
     
     .max-container {
       @apply mx-auto max-w-[1440px];
+    }
+
+    .heading-text {
+        @apply text-6xl w-full mb-10 font-fredoka font-medium
     }
   
     .padding-container {

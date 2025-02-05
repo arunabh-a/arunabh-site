@@ -1,8 +1,6 @@
 import React from 'react';
 import { HoverEffect } from '../ui/card-hover';
-// import { Element } from 'react-scroll';
-// import FadeInWhenVisible from '../Fade-in-visible';
-
+import AnimatedContent from '../ui/animated-content';
 
 const Projects = () => {
 
@@ -47,14 +45,32 @@ const Projects = () => {
 
     return (
         <div className='h-screen padding-container max-container'>
-            {/* <FadeInWhenVisible> */}
-                <h1 className='text-6xl title relative left-20 mb-20'>Stuff I Made</h1>
-            {/* </FadeInWhenVisible> */}
+            <AnimatedContent
+                distance={150}
+                direction="vertical"
+                reverse={false}
+                config={{ tension: 80, friction: 20 }}
+                initialOpacity={0.2}
+                animateOpacity
+                scale={1.1}
+                threshold={0.2}
+            >
+                <h1 className='heading-text'>Stuff I Made</h1>
+            </AnimatedContent>
 
             <div className="max-w-6xl mx-auto px-20  mt-20">
-                {/* <FadeInWhenVisible> */}
+                <AnimatedContent
+                    distance={150}
+                    direction="vertical"
+                    reverse={false}
+                    config={{ tension: 80, friction: 20 }}
+                    initialOpacity={0.2}
+                    animateOpacity
+                    scale={1.1}
+                    threshold={0.2}
+                >
                     <HoverEffect items={project_tiles} />
-                {/* </FadeInWhenVisible> */}
+                </AnimatedContent>
             </div>
 
             
