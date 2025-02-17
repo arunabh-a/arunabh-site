@@ -1,6 +1,6 @@
 import React from 'react';
-import { HoverEffect } from '../ui/card-hover';
-import AnimatedContent from '../ui/animated-content';
+import { HoverEffect } from '@/components/ui/card-hover';
+import AnimatedContent from '@/components/ui/animated-content';
 
 const Projects = () => {
 

@@ -3,8 +3,6 @@ import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
-import { NeonGradientCard } from "./neon-gradient";
-
 export const HoverEffect = ({
   items,
   className,
@@ -70,8 +68,6 @@ export const Card = ({
   children: React.ReactNode;
 }) => {
   return (
-    <NeonGradientCard
-    >
     <div
       className={cn(
           "rounded-2xl h-60  w-full p-4 overflow-hidden bg-[#1b1c2e] border border-transparent group-hover:border-black relative z-20",
@@ -82,7 +78,6 @@ export const Card = ({
         <div className="p-4 flex flex-col gap-2">{children}</div>
       </div>
     </div>
-    </NeonGradientCard>
   );
 };
 export const CardTitle = ({

@@ -9,6 +9,7 @@ const Hero = () => {
 
     return (
         <div className="h-screen ">
+            
             <motion.div 
                 className="bgContainer absolute opacity-50 lg:w-[65rem] lg:h-[65rem] w-[52rem] h-[52rem] bg-[#3B3D65]"
                 initial={{ x: -900, y: -900, rotate: 30 }}

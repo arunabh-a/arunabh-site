@@ -1,6 +1,6 @@
 "use client";
 import { useRef, useEffect, useState, ReactNode } from "react";
-import { useSpring, animated, SpringConfig } from "@react-spring/web";
+import { useSpring, animated, SpringConfig, AnimatedProps } from "@react-spring/web";
 
 interface AnimatedContentProps {
   children: ReactNode;
@@ -12,6 +12,7 @@ interface AnimatedContentProps {
   animateOpacity?: boolean;
   scale?: number;
   threshold?: number;
+  className?: string;
 }
 
 const AnimatedContent: React.FC<AnimatedContentProps> = ({
@@ -24,6 +25,7 @@ const AnimatedContent: React.FC<AnimatedContentProps> = ({
   animateOpacity = true,
   scale = 1,
   threshold = 0.1,
+  className = '',
 }) => {
   const [inView, setInView] = useState(false);
   const ref = useRef<HTMLDivElement | null>(null);
@@ -62,9 +64,12 @@ const AnimatedContent: React.FC<AnimatedContentProps> = ({
       : undefined,
     config,
   });
-
   return (
-    <animated.div ref={ref} style={springProps}>
+    <animated.div 
+      ref={ref} 
+      style={springProps} 
+      className={`animated-content ${className}`.trim()}
+    >
       {children}
     </animated.div>
   );
