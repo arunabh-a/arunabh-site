@@ -22,6 +22,7 @@ export default {
         euclid: "var(--font-euclid)",
       },
       animation: {
+        pulse: 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         first: "moveVertical 30s ease infinite",
         second: "moveInCircle 20s reverse infinite",
         third: "moveInCircle 40s linear infinite",
@@ -31,6 +32,10 @@ export default {
           "background-position-spin 3000ms infinite alternate",
       },
       keyframes: {
+        pulse: {
+            '0%, 100%': { opacity: '1' },
+            '50%': { opacity: '0.3' },
+          },
         moveHorizontal: {
           "0%": {
             transform: "translateX(-50%) translateY(-10%)",
@@ -71,7 +76,7 @@ export default {
     },
   },
   plugins: [
-    addVariablesForColors,
+    addVariablesForColors,require('tailwindcss-animate')
   ],
 },
  } satisfies Config;

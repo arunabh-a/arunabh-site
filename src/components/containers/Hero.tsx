@@ -1,14 +1,14 @@
 "use client";
 import React from 'react'
 import { motion } from 'framer-motion'
-import { TypewriterEffect } from '@/components/ui/typewriter'
 import { HoverBorderGradient } from '../ui/hover-button';
-import BlurText from '../ui/hoverHero';
+import { TextAnimate } from '../ui/TextAnimate';
+
 
 const Hero = () => {
 
     return (
-        <div className="h-screen ">
+        <div className="lg:h-screen mb-40">
             
             <motion.div 
                 className="bgContainer absolute opacity-50 lg:w-[65rem] lg:h-[65rem] w-[52rem] h-[52rem] bg-[#3B3D65]"
@@ -17,14 +17,14 @@ const Hero = () => {
                 transition={{ duration: 1.0 }}
             />
             <div className="flex flex-col lg:p-20 p-10">
-                <BlurText
-                    text="Hello There, I'm "
-                    highlightText="arunabh"
-                    delay={100}
-                    animateBy="words"
-                    direction="top"
-                    className="text-2xl"
-                />
+                <div className="flex gap-2">
+                    <TextAnimate animation="blurInUp" by="character" once>
+                        Hello There, I'm 
+                    </TextAnimate>
+                    <TextAnimate animation="blurInUp" by="character" once className="text-[#6175F8] font-semibold" delay={0.5}>
+                        arunabh
+                    </TextAnimate>
+                </div>
                 <motion.h2 
                     initial={{ y: 50, opacity: 0 }}
                     animate={{ y: 0, opacity: 0.6 }}

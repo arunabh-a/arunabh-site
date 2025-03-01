@@ -26,7 +26,6 @@ body {
     border-radius: 0 0 30% 0 ;
     rotate: 80;
     box-shadow: 10px 10px 20px rgba(2, 16, 99, 0.5);
-    z-index: -1;
 }
 
 .nameHigh {
@@ -92,7 +91,7 @@ body {
     }
 
     .heading-text {
-        @apply text-6xl w-full mb-10 font-fredoka font-medium
+        @apply text-4xl lg:text-6xl w-full mb-10 font-fredoka font-medium
     }
   
     .padding-container {

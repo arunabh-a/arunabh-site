@@ -44,7 +44,7 @@ const Projects = () => {
         ];
 
     return (
-        <div className='h-screen padding-container max-container'>
+        <div className='h-screen md:padding-container max-container'>
             <AnimatedContent
                 distance={150}
                 direction="vertical"

@@ -75,7 +75,7 @@ export const Card = ({
         )}
         >
       <div className="relative z-50">
-        <div className="p-4 flex flex-col gap-2">{children}</div>
+        <div className="md:p-4 p-2 flex flex-col gap-2">{children}</div>
       </div>
     </div>
   );

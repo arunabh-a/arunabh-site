@@ -1,6 +1,6 @@
 "use client";
 import { useRef, useEffect, useState, ReactNode } from "react";
-import { useSpring, animated, SpringConfig, AnimatedProps } from "@react-spring/web";
+import { useSpring, animated, SpringConfig } from "@react-spring/web";
 
 interface AnimatedContentProps {
   children: ReactNode;
@@ -12,7 +12,7 @@ interface AnimatedContentProps {
   animateOpacity?: boolean;
   scale?: number;
   threshold?: number;
-  className?: string;
+  delay?: number;
 }
 
 const AnimatedContent: React.FC<AnimatedContentProps> = ({
@@ -25,7 +25,7 @@ const AnimatedContent: React.FC<AnimatedContentProps> = ({
   animateOpacity = true,
   scale = 1,
   threshold = 0.1,
-  className = '',
+  delay = 0,
 }) => {
   const [inView, setInView] = useState(false);
   const ref = useRef<HTMLDivElement | null>(null);
@@ -37,8 +37,10 @@ const AnimatedContent: React.FC<AnimatedContentProps> = ({
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setInView(true);
           observer.unobserve(element);
+          setTimeout(() => {
+            setInView(true);
+          }, delay);
         }
       },
       { threshold }
@@ -47,7 +49,7 @@ const AnimatedContent: React.FC<AnimatedContentProps> = ({
     observer.observe(element);
 
     return () => observer.disconnect();
-  }, [threshold]);
+  }, [threshold, delay]);
 
   const directions: Record<"vertical" | "horizontal", string> = {
     vertical: "Y",
@@ -56,20 +58,22 @@ const AnimatedContent: React.FC<AnimatedContentProps> = ({
 
   const springProps = useSpring({
     from: {
-      transform: `translate${directions[direction]}(${reverse ? `-${distance}px` : `${distance}px`}) scale(${scale})`,
+      transform: `translate${directions[direction]}(${
+        reverse ? `-${distance}px` : `${distance}px`
+      }) scale(${scale})`,
       opacity: animateOpacity ? initialOpacity : 1,
     },
     to: inView
-      ? { transform: "translateY(0px) scale(1)", opacity: 1 }
+      ? {
+          transform: `translate${directions[direction]}(0px) scale(1)`,
+          opacity: 1,
+        }
       : undefined,
     config,
   });
+
   return (
-    <animated.div 
-      ref={ref} 
-      style={springProps} 
-      className={`animated-content ${className}`.trim()}
-    >
+    <animated.div ref={ref} style={springProps}>
       {children}
     </animated.div>
   );

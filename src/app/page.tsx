@@ -6,11 +6,10 @@ import Projects from "@/components/containers/Projects";
 
 export default function Home() {
   return (
-    <div >
-        
+    <div className="flex flex-col overflow-x-hidden gap-20">
         <Hero />
         <About />
-        {/* <Experience /> */}
+        <Experience />
         <Projects />
     </div>
   );
