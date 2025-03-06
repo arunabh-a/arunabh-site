@@ -3,6 +3,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { HoverBorderGradient } from '../ui/hover-button';
 import { TextAnimate } from '../ui/TextAnimate';
+import BlurText from '../ui/BlurText';
 
 
 const Hero = () => {
@@ -17,14 +18,14 @@ const Hero = () => {
                 transition={{ duration: 1.0 }}
             />
             <div className="flex flex-col lg:p-20 p-10">
-                <div className="flex gap-2">
-                    <TextAnimate animation="blurInUp" by="character" once>
-                        Hello There, I'm 
-                    </TextAnimate>
-                    <TextAnimate animation="blurInUp" by="character" once className="text-[#6175F8] font-semibold" delay={0.5}>
-                        arunabh
-                    </TextAnimate>
-                </div>
+                <BlurText
+                    text="Hello There, I'm "
+                    highlightText="arunabh"
+                    delay={100}
+                    animateBy="words"
+                    direction="top"
+                    className="text-2xl"
+                />
                 <motion.h2 
                     initial={{ y: 50, opacity: 0 }}
                     animate={{ y: 0, opacity: 0.6 }}

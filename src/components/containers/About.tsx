@@ -6,7 +6,7 @@ import { NeonGradientCard } from '@/components/ui/neon-gradient';
 const About = () => {
     
     return (
-        <div className="px-9  max-container md:padding-container">
+        <div className="min-h-screen">
             <AnimatedContent
                     distance={150}
                     direction="vertical"

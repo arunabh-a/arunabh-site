@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "client/arunabh-site/tailwind.config.js", "src/components/ui/animated-content.jsx", "src/components/ui/hoverHero.tsx"],
   "exclude": ["node_modules"]
 }

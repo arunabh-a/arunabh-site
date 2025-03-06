@@ -7,10 +7,13 @@ import Projects from "@/components/containers/Projects";
 export default function Home() {
   return (
     <div className="flex flex-col overflow-x-hidden gap-20">
+            
         <Hero />
-        <About />
-        <Experience />
-        <Projects />
+        <div className=" px-10 max-container md:padding-container">
+            <About />
+            <Experience />
+            <Projects />
+        </div>
     </div>
   );
 }
