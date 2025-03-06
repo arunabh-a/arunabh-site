@@ -52,7 +52,7 @@ const About = () => {
                 >
 
                 <NeonGradientCard className="w-fit h-fit m-10">
-                    <div className="lg:w-[500px] lg:h-[500px] md:w-[400px] md:h-[400px] w-[300px] h-[300px] flex items-center justify-center">
+                    <div className="lg:w-[500px] lg:h-[500px] md:w-[400px] md:h-[400px] w-[250px] h-[250px] flex items-center justify-center">
                         <Image 
                             src={pfp} 
                             alt="about" 

@@ -73,7 +73,7 @@ export default function RootLayout({
         className={`${euclid.className} ${fredoka.className} flex flex-col antialiased`}
       >
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
