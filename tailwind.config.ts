@@ -28,6 +28,7 @@ export default {
         third: "moveInCircle 40s linear infinite",
         fourth: "moveHorizontal 40s ease infinite",
         fifth: "moveInCircle 20s ease infinite",
+        meteor: "meteor 5s linear infinite",
         "background-position-spin":
           "background-position-spin 3000ms infinite alternate",
       },
@@ -73,6 +74,17 @@ export default {
           "0%": { backgroundPosition: "top center" },
           "100%": { backgroundPosition: "bottom center" },
         },
+        meteor: {
+            "0%": {
+              transform: "rotate(var(--angle)) translateX(0)",
+              opacity: "1",
+            },
+            "70%": { opacity: "1" },
+            "100%": {
+              transform: "rotate(var(--angle)) translateX(-500px)",
+              opacity: "0",
+            },
+          },
     },
   },
   plugins: [

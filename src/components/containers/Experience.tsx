@@ -72,7 +72,7 @@ export function Experience() {
     },
   ];
   return (
-    <div className="hidden md:block">
+    <div className="">
         <AnimatedContent
             distance={150}
             direction="vertical"
