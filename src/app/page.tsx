@@ -7,18 +7,25 @@ import { useEffect, useState } from "react";
 import Loading from "./loading";
 import { Particles } from "@/components/ui/ParticlesBackground";
 import Contact from "@/components/containers/Contact";
+import Update from "@/components/Update";
 
 export default function Home() {
-    const [isLoading, setIsLoading] = useState(true);
+    const [isLoading, setIsLoading] = useState(false);
+    const [update, setUpdate] = useState(true);
 
-    useEffect(() => {
-        setTimeout(() => {
-            setIsLoading(false);
-        }, 2000);
-    }, []);
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         setIsLoading(false);
+    //     }, 2000);
+    // }, []);
 
-    if (isLoading) {
-        return <Loading />;
+    // if (isLoading) {
+    //     return <Loading />;
+    // }
+
+    // setUpdate(true);
+    if (update) {
+        return <Update />;
     }
 
   return (

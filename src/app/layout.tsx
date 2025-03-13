@@ -71,7 +71,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${euclid.className} ${fredoka.className} overflow-x-hidden py-10 flex flex-col antialiased`}
+        className={`${euclid.className} ${fredoka.className} overflow-x-hidden pb-10 flex flex-col antialiased`}
       >
         {children}
         {/* <Footer /> */}
