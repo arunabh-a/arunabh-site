@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
 import AnimatedContent from "../ui/animated-content";
-import wowPunjab from "@/assets/experience/wow_punjab.jpg";
+import Link from "next/link";
 
 export function Experience() {
   const data = [
@@ -18,7 +18,14 @@ export function Experience() {
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
-              src={wowPunjab}
+              src='/experience/wow_punjab.jpg'
+              alt="startup template"
+              width={600}
+              height={600}
+              className="rounded-lg object-cover h-56  w-full pfp"
+            />
+            <Image
+              src='/experience/wow_stage.jpg'
               alt="startup template"
               width={600}
               height={600}
@@ -34,15 +41,32 @@ export function Experience() {
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-4xl font-normal mb-8">
-            Started working on some projects. 
+            Started Building some Projects 
+          </p>
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-xl font-normal mb-8">
+            Check Out My Work on my <Link href="https://github.com/arunabh-a">Github</Link>
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
-              src="https://www.freepik.com/free-photo/mom-spending-time-with-kid-beach_78594638.htm#fromView=serie&position=48&from_element=series_block"
+              src="/experience/Tabenspace.png"
               alt="hero template"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-full w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+            <Image
+              src="/experience/shirclex.png"
+              alt="hero template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-full w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+            <Image
+              src="/experience/sadam.png"
+              alt="hero template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-full w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             
           </div>
@@ -56,17 +80,33 @@ export function Experience() {
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-4xl font-normal mb-8">
             Participated in Hackathons
           </p>
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-xl font-normal mb-8">
+            Had tons of fun and learned a lot. 
+          </p>
           <div className="mb-8">
           </div>
           <div className="grid grid-cols-2 gap-4">
             <Image
-              src="https://www.freepik.com/free-photo/mom-spending-time-with-kid-beach_78594638.htm#fromView=serie&position=48&from_element=series_block"
+              src="/experience/RJ-Police.jpg"
               alt="hero template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
-            
+            <Image
+              src="/experience/Before-Indore.jpg"
+              alt="hero template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+            <Image
+              src="/experience/fun.jpg"
+              alt="hero template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-50 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
           </div>
         </div>
       ),
@@ -76,18 +116,11 @@ export function Experience() {
         content: (
           <div className="font-euclid">
             <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-4xl font-normal mb-8">
-                Joined my first Internship
+                Writing...
             </p>
             <div className="mb-8">
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <Image
-                src="https://www.freepik.com/free-photo/mom-spending-time-with-kid-beach_78594638.htm#fromView=serie&position=48&from_element=series_block"
-                alt="hero template"
-                width={500}
-                height={500}
-                className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-              />
               
             </div>
           </div>
@@ -95,7 +128,7 @@ export function Experience() {
       },
   ];
   return (
-    <div className="hidden md:block">
+    <div className="hidden md:block mb-20">
         <AnimatedContent
             distance={150}
             direction="vertical"
