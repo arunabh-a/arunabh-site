@@ -10,41 +10,47 @@ const Projects = () => {
             description:
                 "A Money Ledger App that helps you keep track of your expenses and income.",
             link: "https://github.com/arunabh-a/Reptiq",
+            githubLink: "https://github.com/arunabh-a/Reptiq",
             },
             {
             title: "Shirclex",
             description:
                 "A ThreeJS Application for rendering 3D Shirt Models with Logos and Textures.",
             link: "https://github.com/arunabh-a/Shirclex",
+            githubLink: "https://github.com/arunabh-a/Shirclex",
             },
             {
             title: "TabenSpace",
             description:
                 "A Web Application for creating and managing your own Custom Tabs.",
             link: "https://github.com/arunabh-a/Tabenspace",
+            // githubLink: "https://github.com/arunabh-a/Tabenspace",
             },
             {
             title: "ParTable",
             description:
                 "A React Application for creating Dynamic Tables with Custom Data.",
             link: "https://github.com/arunabh-a/ParTable",
+            githubLink: "https://github.com/arunabh-a/ParTable",
             },
             {
             title: "Social-Linktree",
             description:
                 "Custom-Made Social Tree for my Social Handles along with some other links.",
             link: "https://github.com/arunabh-a/My-Socials",
+            githubLink: "https://github.com/arunabh-a/My-Socials",
             },
             {
             title: "SDM",
             description:
                 "A Suspect Detection Model used to analyse and flag potential suspects.",
             link: "https://github.com/hack-black-pearl/Suspect_Detection_Model",
+            // githubLink: "https://github.com/hack-black-pearl/Suspect_Detection_Model",
             },
         ];
 
     return (
-        <div className='h-screen md:padding-container max-container'>
+        <div className='min-h-screen md:padding-container max-container'>
             <AnimatedContent
                 distance={150}
                 direction="vertical"
@@ -58,7 +64,7 @@ const Projects = () => {
                 <h1 className='heading-text'>Stuff I Made</h1>
             </AnimatedContent>
 
-            <div className="max-w-6xl mx-auto px-20  mt-20">
+            <div className="max-w-6xl mx-auto  mt-20">
                 <AnimatedContent
                     distance={150}
                     direction="vertical"

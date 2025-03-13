@@ -32,7 +32,7 @@ export default function Home() {
         />
 
         <Hero />
-        <div className=" max-container padding-container md:px-10">
+        <div className="flex flex-col lg:max-container padding-container md:px-10 space-y-20">
             <About />
             <Experience />
             <Projects />

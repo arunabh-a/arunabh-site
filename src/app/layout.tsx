@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Footer from "@/components/containers/Footer";
+import { Toaster } from "sonner";
 
 const fredoka = localFont({
     src: [
@@ -70,10 +71,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${euclid.className} ${fredoka.className} overflow-x-hidden flex flex-col antialiased`}
+        className={`${euclid.className} ${fredoka.className} overflow-x-hidden py-10 flex flex-col antialiased`}
       >
         {children}
         {/* <Footer /> */}
+        <Toaster richColors position="top-right" closeButton theme="dark" />
       </body>
     </html>
   );

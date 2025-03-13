@@ -16,6 +16,11 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        bgContainer: "#3B3D65",
+        secondary: "#2B2D45",
+        accent: "#4B4D65",
+        primary: "#1B1D35",
+        highlight: "#6175F8",
       },
       fontFamily: {
         fredoka: "var(--font-fredoka)",

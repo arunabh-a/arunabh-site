@@ -31,7 +31,7 @@ const About = () => {
                     scale={1.1}
                     threshold={0.2}
                 >
-                    <p className=' md:w-full font-euclid text-white font-normal md:text-2xl text-xl '>
+                    <p className=' md:w-full font-euclid text-center lg:text-left text-white font-medium md:text-2xl text-md '>
                     I'm a <strong> Software Developer </strong>  with years of experience in <strong> Frontend and Backend Development </strong> from the city of <strong>Delhi</strong>. From my early years, I discovered my fascination with <strong>computers</strong>, sparking a lifelong passion that led me to where I am today. 
                     <br />
                     Over the past few years, I've been exploring the tech world, working with tools like <strong>React, NodeJS, Bash Shell, Flutter, Tensorflow, Google Cloud and more</strong>....

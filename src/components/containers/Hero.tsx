@@ -38,13 +38,14 @@ const Hero = () => {
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
-                        transition={{ ease: "easeOut", duration: 3 }}>
+                        transition={{ ease: "easeOut", duration: 3 }}
+                        >
                         
                         <InteractiveHoverButton
                         onClick={() => window.location.href = 'https://arunabh.online/'}>Contact Me</InteractiveHoverButton>
                     </motion.div>
                 </div>
-                <div className="p-40">
+                <div className="p-40 hidden lg:block">
                     <Scroller />
                 </div>
             </div>

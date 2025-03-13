@@ -2,7 +2,9 @@
 import { cn } from "../../lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
+import GithubIcon from "@/../public/github-fill.svg";
 import { useState } from "react";
+import Image from "next/image";
 export const HoverEffect = ({
   items,
   className,
@@ -11,6 +13,7 @@ export const HoverEffect = ({
     title: string;
     description: string;
     link: string;
+    githubLink?: string;
   }[];
   className?: string;
 }) => {
@@ -49,10 +52,10 @@ export const HoverEffect = ({
               />
             )}
           </AnimatePresence>
-          <Card>
-            <CardTitle>{item.title}</CardTitle>
-            <CardDescription>{item.description}</CardDescription>
-
+          <Card githubLink={item.githubLink || ""}>
+            
+              <CardTitle>{item.title}</CardTitle>
+              <CardDescription>{item.description}</CardDescription>
           </Card>
         </Link>
       ))}
@@ -63,17 +66,23 @@ export const HoverEffect = ({
 export const Card = ({
   className,
   children,
+  githubLink,
 }: {
   className?: string;
   children: React.ReactNode;
+  githubLink: string;
 }) => {
+    
   return (
     <div
       className={cn(
-          "rounded-2xl h-60  w-full p-4 overflow-hidden bg-[#1b1c2e] border border-transparent group-hover:border-black relative z-20",
+          "rounded-2xl h-60  w-full p-4 overflow-hidden bg-[#1b1c2e] border border-gray-600 group-hover:border-black relative z-20",
           className
         )}
         >
+        {githubLink && (        
+            <Image src={GithubIcon} alt="Github" width={44} height={44} className="absolute top-2 right-2" />
+        )}
       <div className="relative z-50">
         <div className="md:p-4 p-2 flex flex-col gap-2">{children}</div>
       </div>
@@ -103,7 +112,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        " text-zinc-400 tracking-wide leading-relaxed text-lg",
+        " text-gray-300 font-euclid tracking-wide leading-relaxed text-lg",
         className
       )}
     >
