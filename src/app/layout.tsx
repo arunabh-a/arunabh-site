@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+
 import "./globals.css";
-import Footer from "@/components/containers/Footer";
+import Footer from "@/components/custom/Footer";
 import { Toaster } from "sonner";
+import { Lexend_Deca } from "next/font/google";
+import LinkNav from "@/components/custom/LinkNav";
+import { NavDock } from "@/components/custom/Dock";
 
 const fredoka = localFont({
     src: [
@@ -57,6 +61,11 @@ const euclid = localFont({
     variable: "--font-euclid", // CSS variable for font
 });
 
+const lexendDeca = Lexend_Deca({
+    subsets: ["latin"],
+    variable: "--font-lexend-deca",
+});
+
 
 export const metadata: Metadata = {
   title: "Arunabh's Portfolio",
@@ -71,10 +80,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${euclid.className} ${fredoka.className} overflow-x-hidden pb-10 flex flex-col antialiased`}
+        className={`${euclid.className} ${fredoka.className} ${lexendDeca.className} overflow-x-hidden  flex flex-col antialiased hidden-scrollbar`}
       >
         {children}
-        {/* <Footer /> */}
+        {/* <LinkNav /> */}
+        <NavDock />
         <Toaster richColors position="top-right" closeButton theme="dark" />
       </body>
     </html>

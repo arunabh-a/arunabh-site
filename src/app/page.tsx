@@ -1,25 +1,8 @@
-"use client";
-import About from "@/components/containers/About";
-import { Experience } from "@/components/containers/Experience";
-import Hero from "@/components/containers/Hero";
-import Projects from "@/components/containers/Projects";
-import { useEffect, useState } from "react";
-import Loading from "./loading";
+import Hero from "@/components/custom/Hero";
 import { Particles } from "@/components/ui/ParticlesBackground";
 import Contact from "@/components/containers/Contact";
 
 export default function Home() {
-    const [isLoading, setIsLoading] = useState(true);
-
-    useEffect(() => {
-        setTimeout(() => {
-            setIsLoading(false);
-        }, 2000);
-    }, []);
-
-    if (isLoading) {
-        return <Loading />;
-    }
 
 
   return (
@@ -33,12 +16,6 @@ export default function Home() {
         />
 
         <Hero />
-        <div className="flex flex-col lg:max-container padding-container md:px-10 space-y-20">
-            <About />
-            <Experience />
-            <Projects />
-            <Contact />
-        </div>
     </div>
   );
 }

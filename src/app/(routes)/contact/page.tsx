@@ -1,10 +1,9 @@
 "use client";
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import EarthCanvas from "../ui/EarthCanvas";
+import EarthCanvas from "@/components/ui/EarthCanvas";
 import { toast } from "sonner";
-
-const Contact = () => {
+const Page = () => {
     const [form, setForm] = useState({
         name: "",
         email: "",
@@ -55,7 +54,7 @@ const Contact = () => {
     };
 
     return (
-        <div className='xl:mb-20 contain-div overflow-hidden flex justify-center gap-10 items-start'>
+        <div className='h-screen overflow-hidden flex justify-center gap-10 items-center'>
             <motion.div
                 className='bg-[#3B3D65]/40 lg:p-16 p-10 rounded-2xl  flex-none'
                 initial={{ opacity: 0.0, x: -100 }}
@@ -127,4 +126,4 @@ const Contact = () => {
     );
 };
 
-export default Contact;
+export default Page
