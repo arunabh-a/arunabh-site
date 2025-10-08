@@ -8,12 +8,11 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
     return (
-        <main className='flex-1 relative padding-container overflow-clip'>
+        <main className='flex-1 padding-container lg:max-container mx-auto'>
             <Header />
-            <main>
+            <main className='flex-1 '>
                 {children}
             </main>
-            {/* <Footer /> */}
         </main>
     )
 }

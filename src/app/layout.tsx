@@ -80,10 +80,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${euclid.className} ${fredoka.className} ${lexendDeca.className} overflow-x-hidden  flex flex-col antialiased hidden-scrollbar`}
+        className={`${euclid.className} ${fredoka.className} ${lexendDeca.className} overflow-x-hidden  flex w-full h-full min-h-screen antialiased hidden-scrollbar`}
+        // suppressHydrationWarning={true}
       >
         {children}
-        {/* <LinkNav /> */}
         <NavDock />
         <Toaster richColors position="top-right" closeButton theme="dark" />
       </body>

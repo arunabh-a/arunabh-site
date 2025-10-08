@@ -55,99 +55,129 @@ export const EXPERIENCE_CONTENT = {
 export const PROJECTS_CONTENT: ProjectCardProps[] = [
     {
         name: "Reptiq",
-        description: "A Money Ledger App that helps you keep track of your expenses and income.",
+        description:
+            "A Money Ledger App that helps you keep track of your expenses and income.",
         techStack: ["React", "TypeScript", "Next.js"],
         imageUrl: "/experience/Before-Indore.jpg",
         websiteUrl: "https://example.com",
     },
     {
         name: "Shirclex",
-        description: "A ThreeJS Application for rendering 3D Shirt Models with Logos and Textures.",
+        description:
+            "A ThreeJS Application for rendering 3D Shirt Models with Logos and Textures.",
         techStack: ["Three.js", "React", "TypeScript"],
         imageUrl: "/experience/Shirclex.jpg",
         websiteUrl: "https://github.com/arunabh-a/Shirclex",
     },
     {
         name: "TabenSpace",
-        description: "A Web Application for creating and managing your own Custom Tabs.",
+        description:
+            "A Web Application for creating and managing your own Custom Tabs.",
         techStack: ["React", "TypeScript"],
         imageUrl: "/experience/TabenSpace.jpg",
         websiteUrl: "https://github.com/arunabh-a/Tabenspace",
     },
     {
         name: "ParTable",
-        description: "A React Application for creating Dynamic Tables with Custom Data.",
+        description:
+            "A React Application for creating Dynamic Tables with Custom Data.",
         techStack: ["React", "TypeScript"],
         imageUrl: "/experience/ParTable.jpg",
         websiteUrl: "https://github.com/arunabh-a/ParTable",
     },
     {
         name: "Social-Linktree",
-        description: "Custom-Made Social Tree for my Social Handles along with some other links.",
+        description:
+            "Custom-Made Social Tree for my Social Handles along with some other links.",
         techStack: ["HTML", "CSS", "JavaScript"],
         imageUrl: "/experience/Social-Linktree.jpg",
         websiteUrl: "https://github.com/arunabh-a/My-Socials",
     },
     {
         name: "SDM",
-        description: "A Suspect Detection Model used to analyse and flag potential suspects.",
+        description:
+            "A Suspect Detection Model used to analyse and flag potential suspects.",
         techStack: ["Python", "Machine Learning", "OpenCV"],
         imageUrl: "/experience/SDM.jpg",
-        websiteUrl: "https://github.com/hack-black-pearl/Suspect_Detection_Model",
+        websiteUrl:
+            "https://github.com/hack-black-pearl/Suspect_Detection_Model",
     },
 ];
 
-
 export const SOCIAL_LINKS = [
-  {
-    name: 'Portfolio',
-    url: 'https://www.site.arunabh.online/',
-    icon: 'portfolio',
-  },
-  {
-    name: 'Twitter',
-    url: 'https://x.com/arunabh_2',
-    icon: 'twitter',
-  },
-  {
-    name: 'Discord',
-    url: 'https://discordapp.com/users/809714813562257418',
-    icon: 'discord',
-  },
-  {
-    name: 'Google Developer',
-    url: 'https://g.dev/arunabha',
-    icon: 'google',
-  },
-  {
-    name: 'Instagram',
-    url: 'https://www.instagram.com/_arunabh.02',
-    icon: 'instagram',
-  },
-  {
-    name: 'Spotify',
-    url: 'https://open.spotify.com/user/o9pmdmo3l3lvhihv87srf8bfg?si=668b885d71c546ab',
-    icon: 'spotify',
-  },
-  {
-    name: 'Steam',
-    url: 'https://steamcommunity.com/profiles/76561198866581261/',
-    icon: 'steam',
-  },
-  {
-    name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/arunabhaa/',
-    icon: 'linkedin',
-  },
-  {
-    name: 'GitHub',
-    url: 'https://github.com/arunabh-a',
-    icon: 'github',
-  },
-  {
-    name: 'Hashnode',
-    url: 'https://blog.arunabh.online/',
-    icon: 'hashnode',
-  },
+    {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/arunabhaa/",
+        icon: "/icons/linkedin-fill.svg",
+        description: "The Professional Me",
+    },
+    {
+        name: "GitHub",
+        url: "https://github.com/arunabh-a",
+        icon: "/icons/github-fill.svg",
+        description: "My Home for all my Code",
+    },
+    {
+        name: "Discord",
+        url: "https://discordapp.com/users/809714813562257418",
+        icon: "/icons/discord-fill.svg",
+        description: "Good luck finding me here",
+    },
+    {
+        name: "Hashnode",
+        url: "https://blog.arunabh.online/",
+        icon: "/icons/hashnode-white.png",
+        description: "Where I write about Tech (or I will try to)",
+    },
+    {
+        name: "Twitter",
+        url: "https://x.com/arunabh_2",
+        icon: "/icons/twitter-x-fill.svg",
+        description: "I just Exist here",
+    },
+    //   {
+    //     name: 'Google Developer',
+    //     url: 'https://g.dev/arunabha',
+    //     icon: '/icons/gdev.png',
+    //   },
+    // {
+    //   name: 'Instagram',
+    //   url: 'https://www.instagram.com/_arunabh.02',
+    //   icon: '/public/icons/instagram-line.svg',
+    // },
+    // {
+    //   name: 'Spotify',
+    //   url: 'https://open.spotify.com/user/o9pmdmo3l3lvhihv87srf8bfg?si=668b885d71c546ab',
+    //   icon: '/public/icons/leetcode.svg',
+    // },
+    // {
+    //   name: 'Steam',
+    //   url: 'https://steamcommunity.com/profiles/76561198866581261/',
+    //   icon: '/public/icons/steam-fill.svg',
+    // },
 ];
 
+export const PRODUCT_LINKS = [
+    {
+        name: "Hoocup",
+        url: "https://hoocup.fun",
+        cover: "/icons/hoocup.png",
+        description: "AI Powered Companion for your Friendly Talks",
+    },
+    {
+        name: "Tabenspace",
+        url: "https://tabenspace.com",
+        cover: "/icons/tabenspace.png",
+        description: "The Ultimate Productivity Tool to streamline your digital life",
+    },
+]
+
+
+export const LINKS_CONTENTS = {
+    social_title: "Links",
+    social_description: "Check out my presence on the Internet",
+    product_title: "Products",
+    product_description: "Stuff I'm Actively working on",
+    links: SOCIAL_LINKS,
+    products: PRODUCT_LINKS,
+}

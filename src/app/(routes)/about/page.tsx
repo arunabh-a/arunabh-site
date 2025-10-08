@@ -5,8 +5,9 @@ import { ABOUT_US_CONTENT } from "@/lib/constants";
 
 const Page = () => {
     return (
-        <div className="flex h-screen lg:justify-between overflow-hidden justify-center items-center lg:flex-row flex-col-reverse lg:gap-36 min-h-full">
-            <div className="bg-gray-600 p-4 rounded-2xl border-4">
+        
+        <div className="flex h-screen lg:justify-evenly overflow-hidden justify-center items-center lg:flex-row flex-col-reverse ">
+            <div className="bg-gray-600 p-4 rounded-2xl max-w-2xl border-4">
                 <p className="md:w-full font-euclid text-center lg:text-left text-gray-300 font-medium text-md">
                     Based in <strong className="text-white">Delhi</strong>, I'm
                     a <strong className="text-white">Software Engineer</strong>{" "}
@@ -48,13 +49,13 @@ const Page = () => {
                     </div>
                 </div>
             </div>
-            <div className="lg:w-[400px] lg:h-[400px] md:w-[300px] md:h-[300px] w-[200px] h-[200px] flex items-center justify-center">
+            <div className="w-[150px] h-[150px] xs:w-[180px] xs:h-[180px] sm:w-[220px] sm:h-[220px] md:w-[280px] md:h-[280px] lg:w-[400px] lg:h-[400px] flex items-center justify-center">
                 <Image
                     src={pfp}
                     alt="about"
-                    width={400}
-                    height={400}
-                    className="pfp p-1 aspect-square object-cover"
+                    width={500}
+                    height={500}
+                    className="pfp p-1 aspect-square object-cover "
                     style={{
                         borderRadius: "47% 53% 50% 50% / 41% 30% 70% 59%",
                     }}
